@@ -17,24 +17,6 @@
 
   
 
-  // portfolio filter
-  $('.art-filter a').on('click', function() {
-    $('.art-filter .art-current').removeClass('art-current');
-    $(this).addClass('art-current');
-
-    var selector = $(this).data('filter');
-    $('.art-grid').isotope({
-      filter: selector
-    });
-    return false;
-  });
-
-  // masonry Grid
-  $('.art-grid').isotope({
-    filter: '*',
-    itemSelector: '.art-grid-item',
-    transitionDuration: '.6s',
-  });
 
   
 
